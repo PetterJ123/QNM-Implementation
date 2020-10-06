@@ -5,11 +5,6 @@
 
 int main(int argc, char *argv[])
 {
-	if((std::string)argv[1] == "--help")
-	{
-		std::cout << "<service demand> <think time> <customers>\n";
-		exit(0);
-	}
 	double Qi[100];
 	double Rprime[100];
 	double X[100];
@@ -17,7 +12,7 @@ int main(int argc, char *argv[])
 	int n = 50;     // # of customers
 
 	double Di = 0.25;   // service demand
-	double Z = 3.0;     // think time
+	double Z = 2.0;     // think time
 
 	if (argc > 1)
 	{
